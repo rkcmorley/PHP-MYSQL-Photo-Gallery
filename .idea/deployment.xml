@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="FMA TEST">
+    <serverData>
+      <paths name="FMA TEST">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="FMA" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

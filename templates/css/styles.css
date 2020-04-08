@@ -1,0 +1,37 @@
+h1 {
+    color: #001f3f;
+}
+
+h2 {
+    color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #DDDDDD;
+}
+
+p {
+    display: inline-block;
+    font-weight: bold;
+    color: #001f3f;
+}
+
+p.breakpoint {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline;
+    padding-right: 10px;
+}
+
+a{
+    color: #001f3f;
+    text-decoration: none;
+}
+
+ul{
+    padding-left: 0;
+}

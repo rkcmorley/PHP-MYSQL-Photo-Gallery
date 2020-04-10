@@ -1,9 +1,11 @@
 <?php
-
-require_once dirname(dirname(__FILE__)) . '/includes/files.config.php';
-
+$page_title = "Upload";
+$page_headerOne = "Upload an image file";
+require_once dirname(dirname(__FILE__)) . '/includes/directories.php';
+require_once 'includes/table_creation.php';
 require_once 'includes/header.php';
-$page_title = "Upload an image file";
+include_once 'templates/upload.html';
+
 
 if (isset($_POST['singlefileupload'])) {
 
@@ -56,27 +58,5 @@ if (isset($_POST['singlefileupload'])) {
             echo "File upload failed - error code" . $error;
         }
     }
-
-
 }
-?>
 
-<!-- Make form submit to the current page... NB: always escape REQUEST_URI/PHP_SELF!!! -->
-<form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8'); ?>"
-      method="post">
-    <div>
-        <label for="title">Image title:</label>
-        <input type="text" name="title" id="title" />
-    </div>
-    <div>
-        <label for="description">Image description:</label>
-        <input type="text" name="description" id="description" />
-    </div>
-    <div>
-        <label for="fileinput">Upload a jpeg file:</label>
-        <input name="userfile" type="file" id="fileinput"/>
-    </div>
-    <div>
-        <input type="submit" value="Upload File" name="singlefileupload"/>
-    </div>
-</form>

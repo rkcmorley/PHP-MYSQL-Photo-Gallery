@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34cf9dbb-35a4-49fa-bb04-e977f4a933f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/includes/table_creation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/272477621_10158273991998538_8909448303049965568_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/files.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/directories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/resize.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/resize.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_272477621_10158273991998538_8909448303049965568_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_landscape-large.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_lol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/272477621_10158273991998538_8909448303049965568_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/IMG_2719.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/IMG_2720.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/landscape-large.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/lol.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thumbnails/small_lol.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/thumbnails/small_lol.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/IMG_2720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/IMG_2720.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/lol.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/lol.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/largeimage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/largeimage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/uploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/uploads.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +54,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
@@ -88,7 +97,9 @@
       <workItem from="1586366423106" duration="149000" />
       <workItem from="1586366754323" duration="483000" />
       <workItem from="1586376305712" duration="7344000" />
-      <workItem from="1586440377402" duration="6376000" />
+      <workItem from="1586440377402" duration="7710000" />
+      <workItem from="1586525987548" duration="414000" />
+      <workItem from="1586531578701" duration="3848000" />
     </task>
     <servers />
   </component>
@@ -112,58 +123,58 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="409" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1586144365094" />
-    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1586465008416">
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1586485283349">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008416" />
-    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1586465008415">
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283349" />
+    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1586485283348">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008415" />
-    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1586465008415">
+    <state width="1638" height="345" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283348" />
+    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1586485283329">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008415" />
-    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1586465008416">
+    <state width="1638" height="345" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283329" />
+    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1586485283348">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008416" />
-    <state width="1638" height="345" key="GridCell.Tab.1.bottom" timestamp="1586465008417">
+    <state width="1638" height="345" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283348" />
+    <state width="1638" height="345" key="GridCell.Tab.1.bottom" timestamp="1586485283350">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008417" />
-    <state width="1638" height="345" key="GridCell.Tab.1.center" timestamp="1586465008416">
+    <state width="1638" height="345" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283350" />
+    <state width="1638" height="345" key="GridCell.Tab.1.center" timestamp="1586485283349">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008416" />
-    <state width="1638" height="345" key="GridCell.Tab.1.left" timestamp="1586465008416">
+    <state width="1638" height="345" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283349" />
+    <state width="1638" height="345" key="GridCell.Tab.1.left" timestamp="1586485283349">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008416" />
-    <state width="1638" height="345" key="GridCell.Tab.1.right" timestamp="1586465008416">
+    <state width="1638" height="345" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283349" />
+    <state width="1638" height="345" key="GridCell.Tab.1.right" timestamp="1586485283350">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008416" />
-    <state width="1638" height="345" key="GridCell.Tab.2.bottom" timestamp="1586465008417">
+    <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283350" />
+    <state width="1638" height="345" key="GridCell.Tab.2.bottom" timestamp="1586485283351">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.2.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008417" />
-    <state width="1638" height="345" key="GridCell.Tab.2.center" timestamp="1586465008417">
+    <state width="1638" height="345" key="GridCell.Tab.2.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283351" />
+    <state width="1638" height="345" key="GridCell.Tab.2.center" timestamp="1586485283350">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.2.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008417" />
-    <state width="1638" height="345" key="GridCell.Tab.2.left" timestamp="1586465008417">
+    <state width="1638" height="345" key="GridCell.Tab.2.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283350" />
+    <state width="1638" height="345" key="GridCell.Tab.2.left" timestamp="1586485283350">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.2.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008417" />
-    <state width="1638" height="345" key="GridCell.Tab.2.right" timestamp="1586465008417">
+    <state width="1638" height="345" key="GridCell.Tab.2.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283350" />
+    <state width="1638" height="345" key="GridCell.Tab.2.right" timestamp="1586485283351">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586465008417" />
-    <state x="658" y="467" key="NewPhpFileDialog" timestamp="1586364358231">
+    <state width="1638" height="345" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283351" />
+    <state x="658" y="467" key="NewPhpFileDialog" timestamp="1586548668696">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="658" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586364358231" />
+    <state x="658" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586548668696" />
     <state x="678" y="323" key="PhpDebugProjectChooserDialog" timestamp="1586365393518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -195,31 +206,6 @@
           <url>file://$PROJECT_DIR$/../HOE11/client.php</url>
           <line>5</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>11</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>39</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>27</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>53</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>54</line>
-          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

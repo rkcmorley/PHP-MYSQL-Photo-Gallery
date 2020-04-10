@@ -17,9 +17,6 @@ switch ($page) {
     case 'largeimage' :
         include 'views/largeimage.php';
         break;
-/*    case 'data' :
-        include 'views/data.php';
-        break;*/
     default :
         include 'views/404.php';
 }

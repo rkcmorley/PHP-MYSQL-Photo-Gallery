@@ -12,7 +12,7 @@
  * @return bool, string $error[, int $new_width, int $new_height]
  */
 
-require_once dirname(dirname(__FILE__)) . '/includes/files.config.php';
+require_once dirname(dirname(__FILE__)) . '/includes/directories.php';
 function img_resize($in_img_file, $out_img_file, $req_width, $req_height, $quality)
 {
 

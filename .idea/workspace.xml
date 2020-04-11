@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34cf9dbb-35a4-49fa-bb04-e977f4a933f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/table_creation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/en.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/upload_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/files.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/directories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/resize.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/resize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_lol.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/thumbnails/small_lol.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/IMG_2720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/IMG_2720.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/lol.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/lol.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/largeimage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/largeimage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/uploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/uploads.php" afterDir="false" />
@@ -66,11 +61,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes" />
       <recent name="$PROJECT_DIR$/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/includes" />
     </key>
   </component>
@@ -99,7 +94,7 @@
       <workItem from="1586376305712" duration="7344000" />
       <workItem from="1586440377402" duration="7710000" />
       <workItem from="1586525987548" duration="414000" />
-      <workItem from="1586531578701" duration="3848000" />
+      <workItem from="1586531578701" duration="10302000" />
     </task>
     <servers />
   </component>
@@ -115,10 +110,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="428" y="198" key="#Servers/0.23.1680.1027@0.23.1680.1027" timestamp="1586126092837" />
-    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585954657133">
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586552992100">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1585954657133" />
+    <state x="578" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586552992100" />
     <state width="409" height="466" key="DebuggerActiveHint" timestamp="1586144365094">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -171,10 +166,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="345" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586485283351" />
-    <state x="658" y="467" key="NewPhpFileDialog" timestamp="1586548668696">
+    <state x="658" y="467" key="NewPhpFileDialog" timestamp="1586554786684">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="658" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586548668696" />
+    <state x="658" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586554786684" />
     <state x="678" y="323" key="PhpDebugProjectChooserDialog" timestamp="1586365393518">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

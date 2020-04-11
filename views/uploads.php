@@ -1,11 +1,20 @@
 <?php
-$page_title = "Upload";
-$page_headerOne = "Upload an image file";
+
 require_once dirname(dirname(__FILE__)) . '/includes/directories.php';
 require_once 'includes/table_creation.php';
-require_once 'includes/header.php';
-include_once 'templates/upload.html';
+require_once 'lang/' . $config['language'] . '.php';
 
+$home_link = $lang['home_link'];
+$upload_link = $lang['upload_link'];
+$page_title = $lang['upload_title'];
+$page_heading = $lang['upload_heading'];
+
+$header = file_get_contents('templates/header.html');
+$header = str_replace('[+home+]', $home_link, $header);
+$header = str_replace('[+upload+]', $upload_link, $header);
+$header = str_replace('[+page_title+]', $page_title, $header);
+$header = str_replace('[+page_heading+]', $page_heading, $header);
+echo $header;
 
 if (isset($_POST['singlefileupload'])) {
 
@@ -29,11 +38,9 @@ if (isset($_POST['singlefileupload'])) {
 
         $query = "INSERT INTO images (title, description, file_name, width, height) VALUES ('$title', '$description','$upfilename', '$width', '$height' )";
 
-        if(mysqli_query($link, $query))
-        {
+        if (mysqli_query($link, $query)) {
             echo "Data Inserted Successully! <br/>";
-        }
-        else{
+        } else {
             echo "Error: " . $query . "" . mysqli_error($link);
         }
 
@@ -59,4 +66,18 @@ if (isset($_POST['singlefileupload'])) {
         }
     }
 }
+?>
+<form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8'); ?>"
+      method="post">
+<?php
+$image_title = $lang['image_title'];
+$image_description = $lang['image_description'];
+$upload_jpeg = $lang['upload_jpeg'];
+$button = $lang['button'];
 
+$content = file_get_contents('templates/upload_form.html');
+$content = str_replace('[+image_title+]', $image_title, $content);
+$content = str_replace('[+image_description+]', $image_description, $content);
+$content = str_replace('[+upload_jpeg+]', $upload_jpeg, $content);
+$content = str_replace('[+button+]', $button, $content);
+echo $content;

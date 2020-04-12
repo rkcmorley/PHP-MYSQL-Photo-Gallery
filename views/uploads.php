@@ -1,8 +1,7 @@
 <?php
 
 require_once dirname(dirname(__FILE__)) . '/includes/directories.php';
-require_once 'includes/table_creation.php';
-require_once 'lang/' . $config['language'] . '.php';
+require_once 'includes/table-creation.php';
 
 $home_link = $lang['home_link'];
 $upload_link = $lang['upload_link'];
@@ -81,3 +80,5 @@ $content = str_replace('[+image_description+]', $image_description, $content);
 $content = str_replace('[+upload_jpeg+]', $upload_jpeg, $content);
 $content = str_replace('[+button+]', $button, $content);
 echo $content;
+
+?>

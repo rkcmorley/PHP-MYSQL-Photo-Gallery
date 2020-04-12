@@ -1,5 +1,4 @@
 <?php
-$result = mysqli_query($link, $sql);
 if (empty($result)) {
     $sql = "CREATE TABLE 
             images(

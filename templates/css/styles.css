@@ -36,3 +36,8 @@ a{
 ul{
     padding-left: 0;
 }
+
+#wrapper {
+    margin:auto;
+    width:960px;
+}

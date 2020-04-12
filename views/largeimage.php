@@ -6,7 +6,7 @@
  * This will also load the summary of the total number of active artists and songs from the database.
  */
 require_once 'includes/resize.php';
-require_once 'lang/' . $config['language'] . '.php';
+
 
 $home_link = $lang['home_link'];
 $upload_link = $lang['upload_link'];
@@ -20,7 +20,7 @@ $header = str_replace('[+page_title+]', $page_title, $header);
 $header = str_replace('[+page_heading+]', $page_heading, $header);
 echo $header;
 
-$getBigImg = isset($_GET['type']) ? (int)$_GET['type'] : 0;
+$getLargeImgId = isset($_GET['type']) ? (int)$_GET['type'] : 0;
 
 // Get cURL resource
 $my_curl = curl_init();
@@ -30,7 +30,7 @@ curl_setopt_array($my_curl, array(
     CURLOPT_CONNECTTIMEOUT => 5,
     CURLOPT_TIMEOUT => 2,
     CURLOPT_FAILONERROR => true,
-    CURLOPT_URL => 'http://localhost:8888/FMA/includes/data.php?type=' .$getBigImg,
+    CURLOPT_URL => 'http://localhost:8888/FMA/includes/large-image-data.php?type=' .$getLargeImgId,
     CURLOPT_USERAGENT => 'Sample cURL Request'
 ));
 
@@ -59,7 +59,7 @@ $description = $data['description'];
 $height = $data['height'];
 $width = $data['width'];
 
-if ($getBigImg > 0) {
+if ($getLargeImgId > 0) {
     if ($file != null && file_exists("uploads/" . $file)) {
         list($img, $error, $width, $height) = img_resize($config['upload_dir'] . htmlentities($file), $config['upload_dir'] . htmlentities($file), 600, 600, 100);
         if ($img) {

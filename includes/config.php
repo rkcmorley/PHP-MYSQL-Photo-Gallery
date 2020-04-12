@@ -19,9 +19,6 @@ $link = mysqli_connect(
     $config['db_name']
 );
 
-date_default_timezone_set('Europe/London');
 
-//$config['language'] = 'en';
-$config['language'] = 'fr';
 
 

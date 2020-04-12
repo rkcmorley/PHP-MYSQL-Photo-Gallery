@@ -8,7 +8,6 @@ $getLargeImageId = $_GET['type'];
 if ($_GET['type']) {
     // Construct the query
     $sql = "select 
-        id as id,
         file_name as file,
         title as title,
         description as description,

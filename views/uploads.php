@@ -1,7 +1,7 @@
 <?php
 
 require_once dirname(dirname(__FILE__)) . '/includes/directories.php';
-require_once 'includes/table-creation.php';
+
 
 $home_link = $lang['home_link'];
 $upload_link = $lang['upload_link'];
@@ -26,19 +26,16 @@ if (isset($_POST['singlefileupload'])) {
         $newname = $updir . $upfilename; //concatenate file path and file name, the new name
         $tmpname = $_FILES['userfile']['tmp_name']; //old name
 
-        list($width, $height, $type, $attr) = getimagesize($upfilename);
-
+        $title = $_POST['title'];
+        $description = $_POST['description'];
         $size = getimagesize($tmpname);
         $width = $size[0];
         $height = $size[1];
 
-        $title = $_POST['title'];
-        $description = $_POST['description'];
-
         $query = "INSERT INTO images (title, description, file_name, width, height) VALUES ('$title', '$description','$upfilename', '$width', '$height' )";
 
         if (mysqli_query($link, $query)) {
-            echo "Data Inserted Successully! <br/>";
+            echo "Data Inserted Successfully! <br/>";
         } else {
             echo "Error: " . $query . "" . mysqli_error($link);
         }

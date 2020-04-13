@@ -11,9 +11,6 @@ $lang['home_heading'] = 'Photo Gallery';
 $lang['upload_title'] = 'Upload';
 $lang['upload_heading'] = 'Upload an image';
 
-$lang['upload_title'] = 'Upload';
-$lang['upload_heading'] = 'Upload an image';
-
 $lang['image_title'] = 'Image Title';
 $lang['image_description'] = 'Image Description';
 $lang['upload_jpeg'] = 'Upload a jpeg image';

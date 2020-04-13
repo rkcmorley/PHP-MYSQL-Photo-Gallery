@@ -1,12 +1,15 @@
 <?php
 require_once 'includes/config.php';
-require_once 'templates/languages.html';
+
 session_start();
 
 if(isset($_POST['language']) && file_exists("lang/". $_POST['language'] . ".php")){
     $_SESSION['language'] = "lang/". $_POST['language'] . ".php";
 }
 isset($_SESSION['language']) ? include($_SESSION['language']) : include("lang/en.php");
+
+require_once 'includes/languages.php';
+require_once 'templates/languages.html';
 
 if (!isset($_GET['page'])) {
     $page = 'home';

@@ -1,33 +1,15 @@
 <?php
 
-/*
- * This will then render the home's page title and header two.
- *
- * This will also load the summary of the total number of active artists and songs from the database.
- */
 require_once 'includes/resize.php';
 
-
-$home_link = $lang['home_link'];
-$upload_link = $lang['upload_link'];
-$page_title = $lang['home_title'];
-$page_heading = $lang['home_heading'];
-
-$header = file_get_contents('templates/header.html');
-$header = str_replace('[+home+]', $home_link, $header);
-$header = str_replace('[+upload+]', $upload_link, $header);
-$header = str_replace('[+page_title+]', $page_title, $header);
-$header = str_replace('[+page_heading+]', $page_heading, $header);
-echo $header;
-
-$getLargeImgId = isset($_GET['type']) ? (int)$_GET['type'] : 0;
+$getLargeImgId = isset($_GET['image']) ? (int)$_GET['image'] : 0;
 
 // Get cURL resource
 $my_curl = curl_init();
 // Set some options - we are passing in a useragent too here
 curl_setopt_array($my_curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://localhost:8888/FMA/includes/large-image-data.php?type=' . $getLargeImgId,
+    CURLOPT_URL => 'http://localhost:8888/FMA/includes/large-image-data.php?image=' . $getLargeImgId,
     CURLOPT_USERAGENT => 'Sample cURL Request'
 ));
 
@@ -64,10 +46,3 @@ if ($getLargeImgId > 0) {
         echo "<h2>Sorry, this file does not exist!</h2>";
     }
 }
-
-
-
-
-
-
-

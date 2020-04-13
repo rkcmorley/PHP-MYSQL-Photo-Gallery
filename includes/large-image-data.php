@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__.'/config.php';
+require_once __DIR__ .'/config.php';
 header('Content-type: application/json');
 
-$getLargeImgId = $_GET['type'];
+$getLargeImgId = $_GET['image'];
 
 // Generate sql based on query string params
-if ($_GET['type']) {
+if ($_GET['image']) {
     // Construct the query
     $sql = "select 
         file_name as file,

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34cf9dbb-35a4-49fa-bb04-e977f4a933f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/languages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/home-data.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/files.config.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/large-image-data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/large-image-data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thumbnails/small_Rabbit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thumbnails/small_ham.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/Rabbit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/ham.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/largeimage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/largeimage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/uploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/uploads.php" afterDir="false" />
@@ -121,7 +118,7 @@
       <workItem from="1586787988754" duration="1000" />
       <workItem from="1586788082080" duration="1254000" />
       <workItem from="1586796986631" duration="27000" />
-      <workItem from="1586797051183" duration="1049000" />
+      <workItem from="1586797051183" duration="5772000" />
     </task>
     <servers />
   </component>
@@ -201,10 +198,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="621" y="360" key="NewPhpClassDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586715829784" />
-    <state x="658" y="467" key="NewPhpFileDialog" timestamp="1586717370979">
+    <state x="658" y="467" key="NewPhpFileDialog" timestamp="1586802861805">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="658" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586717370979" />
+    <state x="658" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586802861805" />
     <state x="678" y="323" key="PhpDebugProjectChooserDialog" timestamp="1586722442683">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -335,76 +332,6 @@
           <url>file://$PROJECT_DIR$/../language-changer-with-PHP/index.php</url>
           <line>38</line>
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>47</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>49</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>43</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>52</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>53</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/includes/large-image-data.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/includes/large-image-data.php</url>
-          <line>7</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/includes/large-image-data.php</url>
-          <line>36</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/includes/large-image-data.php</url>
-          <line>35</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/includes/large-image-data.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>28</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>29</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/views/largeimage.php</url>
-          <line>30</line>
-          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

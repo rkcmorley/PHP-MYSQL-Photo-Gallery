@@ -1,15 +1,7 @@
 <?php
 
-if ($_GET['page'] == 'home' OR isset($_GET['image'])) {
-    $page_title = $lang['home_title'];
-    $page_heading = $lang['home_heading'];
-}
-
-if($_GET['page'] == 'uploads'){
-    $page_title = $lang['upload_title'];
-    $page_heading = $lang['upload_heading'];
-}
-
+$page_title = $lang['home_title'];
+$page_heading = $lang['home_heading'];
 $home_link = $lang['home_link'];
 $upload_link = $lang['upload_link'];
 

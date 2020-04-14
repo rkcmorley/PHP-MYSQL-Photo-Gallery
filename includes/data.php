@@ -1,16 +1,25 @@
 <?php
-require './config.php';
+require __DIR__ . '/config.php';
+
 header('Content-type: application/json');
 
-
 // Generate sql based on query string params
-// Construct the query
-$sql = "select 
-        id as id,
+$getLargeImageId = $_GET['image'];
+// Generate sql based on query string params
+if ($_GET['image']) {
+    // Construct the query
+    $sql = "select 
         file_name as file,
-        title as title
+        title as title,
+        description as description,
+        height as height,
+        width as width
         from
-        images";
+        images
+        where id ='" . $getLargeImageId  . "'";
+} else {
+    echo "Invalid parameter.";
+}
 
 if (isset($sql)) {
     // Execute the query, assigning the result to $result
@@ -26,14 +35,14 @@ if (isset($sql)) {
         // Make result into array of JSON objects
         $structure = array();
         while ($row = mysqli_fetch_assoc($result)) {
-            $counter +=1;
-            $structure[$counter] = ["id" => $row['id'] ,"file" => $row['file'], "title" => $row['title']];
+            array_push($structure, json_encode($row));
         }
         // Check for errors
         if(json_last_error() == JSON_ERROR_NONE){
             // No errors occurred, so echo json objects
-            header('Content-type: application/json');
-            echo json_encode($structure);
+            foreach ($structure as $json) {
+                echo $json;
+            }
         } else{
             // Errors encountered
             echo 'Something is wrong with JSON...';

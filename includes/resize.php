@@ -17,7 +17,9 @@ function img_resize($in_img_file, $out_img_file, $req_width, $req_height, $quali
 {
 
     // Get image file details
-    list($width, $height, $type, $attr) = getimagesize($in_img_file);
+    $size = getimagesize($in_img_file);
+    $width = $size[0];
+    $height = $size[1];
 
     $src = @imagecreatefromjpeg($in_img_file);
     // Check if image is smaller (in both directions) than required image

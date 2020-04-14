@@ -1,7 +1,7 @@
 <?php
 
 include 'includes/resize.php';
-
+include 'includes/home-header.php';
 
 $my_curl = curl_init();
 // Set some options - we are passing in a useragent too here
@@ -29,18 +29,6 @@ $info = curl_getinfo($my_curl);
 
 // Close request to clear up some resources
 curl_close($my_curl);
-
-$page_title = $lang['home_title'];
-$page_heading = $lang['home_heading'];
-$home_link = $lang['home_link'];
-$upload_link = $lang['upload_link'];
-
-$header = file_get_contents('templates/header.html');
-$header = str_replace('[+home+]', $home_link, $header);
-$header = str_replace('[+upload+]', $upload_link, $header);
-$header = str_replace('[+page_title+]', $page_title, $header);
-$header = str_replace('[+page_heading+]', $page_heading, $header);
-echo $header;
 
 if(!empty($data)) {
     foreach ($data as $item) {

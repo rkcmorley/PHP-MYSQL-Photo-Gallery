@@ -1,8 +1,7 @@
 <?php
 
 include dirname(dirname(__FILE__)) . '/includes/directories.php';
-include 'includes/table-creation.php';
-
+require 'includes/openSQL.php';
 $page_title = $lang['upload_title'];
 $page_heading = $lang['upload_heading'];
 $home_link = $lang['home_link'];
@@ -36,7 +35,7 @@ if (isset($_POST['singlefileupload'])) {
         $query = "INSERT INTO images (title, description, file_name, width, height) VALUES ('$title', '$description','$upfilename', '$width', '$height' )";
 
         if (mysqli_query($link, $query)) {
-            echo "Data Inserted Successully! <br/>";
+            echo "Data Inserted Successfully! <br/>";
         } else {
             echo "Error: " . $query . "" . mysqli_error($link);
         }
@@ -63,6 +62,7 @@ if (isset($_POST['singlefileupload'])) {
         }
     }
 }
+require 'includes/closeSQL.php';
 ?>
 <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8'); ?>"
       method="post">

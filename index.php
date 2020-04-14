@@ -2,15 +2,12 @@
 include 'includes/config.php';
 include 'templates/language-selection.html';
 
-ini_set('display_errors', 1);
 session_start();
 
 if(isset($_POST['language']) && file_exists("lang/". $_POST['language'] . ".php")){
     $_SESSION['language'] = "lang/". $_POST['language'] . ".php";
 }
 isset($_SESSION['language']) ? include($_SESSION['language']) : include("lang/en.php");
-
-require 'includes/languages.php';
 
 if (!isset($_GET['page'])) {
     $page = 'home';

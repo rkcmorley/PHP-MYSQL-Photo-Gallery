@@ -1,13 +1,8 @@
 <?php
-/*
- * This will then render the home's page title and header two.
- *
- * This will also load the summary of the total number of active artists and songs from the database.
- */
 
-require_once 'includes/resize.php';
-require_once 'includes/languages.php';
-// Get cURL resource
+include 'includes/resize.php';
+
+
 $my_curl = curl_init();
 // Set some options - we are passing in a useragent too here
 curl_setopt_array($my_curl, array(
@@ -35,25 +30,30 @@ $info = curl_getinfo($my_curl);
 // Close request to clear up some resources
 curl_close($my_curl);
 
-foreach ($data as $item) {
-    $id = $item['id'];
-    $file = $item['file'];
-    $title = $item['title'];
-    list($img, $error, $width, $height) = img_resize($config['upload_dir'] . htmlentities($file), $config['thumbnails_dir'] . "small_" . htmlentities($file), 150, 150, 80);
-    if ($img) {
-        echo "<h2>" . htmlentities($title) . "</h2>";
-        echo "<a href='?page=largeimage&image=" . htmlentities($id) . "'><img src='thumbnails/small_" . htmlentities($file) . "'width='" . $width . "' height='" . $height . "'/>";
-    } else {
-        echo $error;
+$page_title = $lang['home_title'];
+$page_heading = $lang['home_heading'];
+$home_link = $lang['home_link'];
+$upload_link = $lang['upload_link'];
+
+$header = file_get_contents('templates/header.html');
+$header = str_replace('[+home+]', $home_link, $header);
+$header = str_replace('[+upload+]', $upload_link, $header);
+$header = str_replace('[+page_title+]', $page_title, $header);
+$header = str_replace('[+page_heading+]', $page_heading, $header);
+echo $header;
+
+if(!empty($data)) {
+    foreach ($data as $item) {
+        $id = $item['id'];
+        $file = $item['file'];
+        $title = $item['title'];
+        list($img, $error, $width, $height) = img_resize($config['upload_dir'] . htmlentities($file), $config['thumbnails_dir'] . "small_" . htmlentities($file), 150, 150, 80);
+        if ($img) {
+            echo "<h2>" . htmlentities($title) . "</h2>";
+            echo "<a href='?page=largeimage&image=" . htmlentities($id) . "'><img src='thumbnails/small_" . htmlentities($file) . "'width='" . $width . "' height='" . $height . "'/>";
+        } else {
+            echo $error;
+        }
     }
 }
-
-
-
-
-
-
-
-
-
 

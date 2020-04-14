@@ -1,8 +1,19 @@
 <?php
 
-require_once dirname(dirname(__FILE__)) . '/includes/directories.php';
-require_once 'includes/languages.php';
-require_once 'includes/table-creation.php';
+include dirname(dirname(__FILE__)) . '/includes/directories.php';
+include 'includes/table-creation.php';
+
+$page_title = $lang['upload_title'];
+$page_heading = $lang['upload_heading'];
+$home_link = $lang['home_link'];
+$upload_link = $lang['upload_link'];
+
+$header = file_get_contents('templates/header.html');
+$header = str_replace('[+home+]', $home_link, $header);
+$header = str_replace('[+upload+]', $upload_link, $header);
+$header = str_replace('[+page_title+]', $page_title, $header);
+$header = str_replace('[+page_heading+]', $page_heading, $header);
+echo $header;
 
 if (isset($_POST['singlefileupload'])) {
 
@@ -14,8 +25,6 @@ if (isset($_POST['singlefileupload'])) {
         $upfilename = basename($_FILES['userfile']['name']); //original file name
         $newname = $updir . $upfilename; //concatenate file path and file name, the new name
         $tmpname = $_FILES['userfile']['tmp_name']; //old name
-
-        list($width, $height, $type, $attr) = getimagesize($upfilename);
 
         $size = getimagesize($tmpname);
         $width = $size[0];

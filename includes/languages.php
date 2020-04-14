@@ -1,4 +1,4 @@
-<?php
+git<?php
 $home_link = $lang['home_link'];
 $upload_link = $lang['upload_link'];
 $page_title = $lang['upload_title'];

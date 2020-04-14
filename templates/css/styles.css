@@ -9,7 +9,7 @@ h2 {
 body {
     font-family: Arial, sans-serif;
     background: #DDDDDD;
-    display: block;
+    font-size: 18px;
 }
 
 p {
@@ -28,16 +28,59 @@ li {
     padding-right: 10px;
 }
 
-a{
+a {
     color: #001f3f;
     text-decoration: none;
+    cursor: pointer;
 }
 
-ul{
+button{
+    cursor: pointer;
+}
+
+ul {
     padding-left: 0;
 }
 
-#wrapper {
-    margin:auto;
-    width:960px;
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input {
+    outline:none;
+}
+
+.flag {
+    border: 0;
+    background: transparent;
+}
+
+.largeImage{
+    display: block;
+}
+
+.link{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.submitBtn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    max-width: 13%;
+    min-width: 200px;
+    margin-top: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.input {
+    padding: 5px 20px 5px 3px;
+    margin: 5px 0 10px 0;
+    max-width: 40%;
+    min-width: 300px;
+    font-size: 18px;
 }

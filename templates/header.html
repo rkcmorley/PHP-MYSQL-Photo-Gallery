@@ -13,10 +13,19 @@ The title and header two have placeholders and they will be dynamically generate
     <title>[+page_title+]</title>
 </head>
 <body>
+<div id="wrapper">
+    <p>Select a language:</p>
+    <form method="post">
+        <button type="submit" name="language" value="en" class="flag">
+            <img src="flags/eng.png" alt="submit"/>
+        </button>
+        <button type="submit" name="language" value="fr" class="flag">
+            <img src="flags/fra.png" alt="submit"/>
+        </button>
+    </form>
+</div>
 <ul>
-    <li><a href="index.php?page=home">[+home+]</a></li>
-    <li><a href="index.php?page=uploads">[+upload+]</a></li>
+    <li><a href="index.php?page=home" class="link">[+home+]</a></li>
+    <li><a href="index.php?page=uploads" class="link">[+upload+]</a></li>
 </ul>
-
-</body>
 <h1>[+page_heading+]</h1>

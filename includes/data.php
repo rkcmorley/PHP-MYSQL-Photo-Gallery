@@ -1,5 +1,6 @@
 <?php
 require __DIR__ . '/config.php';
+require __DIR__ . '/openSQL.php';
 
 header('Content-type: application/json');
 
@@ -50,3 +51,4 @@ if (isset($sql)) {
         }
     }
 }
+require __DIR__ . '/closeSQL.php';

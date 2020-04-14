@@ -1,47 +1,36 @@
 <?php
 
 include 'includes/resize.php';
-include 'includes/home-header.php';
+include 'includes/languages.php';
+require 'includes/openSQL.php';
 
-$my_curl = curl_init();
-// Set some options - we are passing in a useragent too here
-curl_setopt_array($my_curl, array(
-    CURLOPT_RETURNTRANSFER => 1,
-    CURLOPT_URL => 'http://localhost:8888/FMA/includes/home-data.php',
-    CURLOPT_USERAGENT => 'Sample cURL Request'
-));
+$sql = "select 
+        id as id,
+        file_name as file,
+        title as title
+        from
+        images";
 
-// Send the request & save response to $resp
-$resp = curl_exec($my_curl);
+/*
+ * This will perform a query on the database.
+ */
+$result = mysqli_query($link, $sql);
 
-$data = '';
-// Get the error codes and messages
-if (curl_errno($my_curl)) {
-    echo 'Code: ' . curl_errno($my_curl);
-    echo 'Message: ' . curl_error($my_curl);
-} else {
-    // Decode the response & process it
-    $data = json_decode($resp, true);
+/*
+ * If it fails, it will show an error message.
+ */
+if ($result === false) {
+    echo mysqli_error($link);
 }
 
-// Get array of info about the transfer
-$info = curl_getinfo($my_curl);
-
-// Close request to clear up some resources
-curl_close($my_curl);
-
-if(!empty($data)) {
-    foreach ($data as $item) {
-        $id = $item['id'];
-        $file = $item['file'];
-        $title = $item['title'];
-        list($img, $error, $width, $height) = img_resize($config['upload_dir'] . htmlentities($file), $config['thumbnails_dir'] . "small_" . htmlentities($file), 150, 150, 80);
-        if ($img) {
-            echo "<h2>" . htmlentities($title) . "</h2>";
-            echo "<a href='?page=largeimage&image=" . htmlentities($id) . "'><img src='thumbnails/small_" . htmlentities($file) . "'width='" . $width . "' height='" . $height . "'/>";
-        } else {
-            echo $error;
-        }
+while ($row = mysqli_fetch_assoc($result)) {
+    list($img, $error, $width, $height) = img_resize($config['upload_dir'] . htmlentities($row['file']), $config['thumbnails_dir'] . "small_" . htmlentities($row['file']), 150, 150, 80);
+    if ($img) {
+        echo "<h2>" . htmlentities($row['title']) . "</h2>";
+        echo "<a href='index.php?page=largeimage&image=" . htmlentities($row['id']) ."'><img src='thumbnails/" . "small_" . htmlentities($row['file']) . "' width='" . $width . "' height='" . $height . "' alt='" . htmlentities($row['title'])  . "'/>" . "</a>";
+    } else {
+        echo $error;
     }
 }
 
+require 'includes/closeSQL.php';

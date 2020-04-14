@@ -1,18 +1,7 @@
 <?php
 
 include dirname(dirname(__FILE__)) . '/includes/directories.php';
-require 'includes/openSQL.php';
-$page_title = $lang['upload_title'];
-$page_heading = $lang['upload_heading'];
-$home_link = $lang['home_link'];
-$upload_link = $lang['upload_link'];
-
-$header = file_get_contents('templates/header.html');
-$header = str_replace('[+home+]', $home_link, $header);
-$header = str_replace('[+upload+]', $upload_link, $header);
-$header = str_replace('[+page_title+]', $page_title, $header);
-$header = str_replace('[+page_heading+]', $page_heading, $header);
-echo $header;
+include 'includes/languages.php';
 
 if (isset($_POST['singlefileupload'])) {
 
@@ -25,21 +14,19 @@ if (isset($_POST['singlefileupload'])) {
         $newname = $updir . $upfilename; //concatenate file path and file name, the new name
         $tmpname = $_FILES['userfile']['tmp_name']; //old name
 
+        $title = $_POST['title'];
+        $description = $_POST['description'];
         $size = getimagesize($tmpname);
         $width = $size[0];
         $height = $size[1];
 
-        $title = $_POST['title'];
-        $description = $_POST['description'];
-
         $query = "INSERT INTO images (title, description, file_name, width, height) VALUES ('$title', '$description','$upfilename', '$width', '$height' )";
 
         if (mysqli_query($link, $query)) {
-            echo "Data Inserted Successfully! <br/>";
+            echo "Data inserted successfully!" . "<br/>";
         } else {
             echo "Error: " . $query . "" . mysqli_error($link);
         }
-
         if (file_exists($newname)) {
             echo "File already exists - not uploaded again";
         } else {
@@ -62,7 +49,7 @@ if (isset($_POST['singlefileupload'])) {
         }
     }
 }
-require 'includes/closeSQL.php';
+
 ?>
 <form enctype="multipart/form-data" action="<?php echo htmlentities($_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8'); ?>"
       method="post">
@@ -72,7 +59,7 @@ $image_description = $lang['image_description'];
 $upload_jpeg = $lang['upload_jpeg'];
 $button = $lang['button'];
 
-$content = file_get_contents('templates/upload_form.html');
+$content = file_get_contents('templates/form.html');
 $content = str_replace('[+image_title+]', $image_title, $content);
 $content = str_replace('[+image_description+]', $image_description, $content);
 $content = str_replace('[+upload_jpeg+]', $upload_jpeg, $content);

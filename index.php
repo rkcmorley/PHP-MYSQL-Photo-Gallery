@@ -1,6 +1,6 @@
 <?php
 include 'includes/config.php';
-include 'templates/language-selection.html';
+
 
 session_start();
 

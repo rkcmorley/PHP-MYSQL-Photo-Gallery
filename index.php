@@ -1,7 +1,6 @@
 <?php
 include 'includes/config.php';
 
-
 session_start();
 
 if(isset($_POST['language']) && file_exists("lang/". $_POST['language'] . ".php")){

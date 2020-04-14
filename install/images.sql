@@ -7,6 +7,7 @@ CREATE TABLE
             width INT(255),
             height INT(255)
             );
+ROLLBACK;                
 
 describe images;
 

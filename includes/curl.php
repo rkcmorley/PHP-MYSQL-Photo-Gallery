@@ -5,8 +5,8 @@ $my_curl = curl_init();
 // Set some options - we are passing in a useragent too here
 curl_setopt_array($my_curl, array(
     CURLOPT_RETURNTRANSFER => 1,
-/*    CURLOPT_URL => 'http://localhost:8888/FMA/includes/data.php?image=' . $getLargeImageId,*/
-    CURLOPT_URL => 'https://titan.dcs.bbk.ac.uk/~rmorle01/FMA/includes/large-image-data.php?image=' . $getLargeImageId,
+    CURLOPT_URL => 'http://localhost:8888/FMA/includes/data.php?image=' . $getLargeImageId,
+/*    CURLOPT_URL => 'https://titan.dcs.bbk.ac.uk/~rmorle01/FMA/includes/large-image-data.php?image=' . $getLargeImageId,*/
     CURLOPT_USERAGENT => 'Sample cURL Request'
 ));
 

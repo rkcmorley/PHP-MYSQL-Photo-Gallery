@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="34cf9dbb-35a4-49fa-bb04-e977f4a933f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/curl.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/curl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/languages.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/languages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/images.sql" beforeDir="false" afterPath="$PROJECT_DIR$/install/images.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/thumbnails/small_IMG_2720.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thumbnails/small_Rabbit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/thumbnails/small_Rabbit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/IMG_2720.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/IMG_2720.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/Rabbit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/Rabbit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ham.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/ham.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

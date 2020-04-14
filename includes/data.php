@@ -5,9 +5,9 @@ require __DIR__ . '/openSQL.php';
 header('Content-type: application/json');
 
 // Generate sql based on query string params
-$getLargeImageId = $_GET['image'];
+$getLargeImageId = isset($_GET['image']) ? (int)$_GET['image'] : 0;
 // Generate sql based on query string params
-if ($_GET['image']) {
+if (isset($_GET['image'])) {
     // Construct the query
     $sql = "select 
         file_name as file,

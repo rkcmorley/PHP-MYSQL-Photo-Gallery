@@ -3,9 +3,9 @@ require_once './config.php';
 header('Content-type: application/json');
 
 // Generate sql based on query string params
-$getLargeImageId = $_GET['type'];
+$getLargeImageId = $_GET['image'];
 // Generate sql based on query string params
-if ($_GET['type']) {
+if ($_GET['image']) {
     // Construct the query
     $sql = "select 
         file_name as file,

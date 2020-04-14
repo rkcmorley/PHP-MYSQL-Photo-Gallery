@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="34cf9dbb-35a4-49fa-bb04-e977f4a933f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/curl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/home-header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/images.sql" beforeDir="false" afterPath="$PROJECT_DIR$/install/images.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/language-selection.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/largeimage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/largeimage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/uploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/uploads.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +94,7 @@
       <workItem from="1586869330597" duration="9000" />
       <workItem from="1586869511444" duration="1243000" />
       <workItem from="1586870870449" duration="3193000" />
-      <workItem from="1586886496214" duration="10157000" />
+      <workItem from="1586886496214" duration="10395000" />
     </task>
     <servers />
   </component>

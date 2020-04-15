@@ -1,5 +1,5 @@
 <?php
-
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $config['db_host'] = '127.0.0.1';
 $config['db_name'] = 'jsondb';
 $config['db_user'] = 'root';
@@ -12,12 +12,20 @@ $config['db_pass'] = 'bbkmysql';*/
 /*
  * This will connect to the database based on the credentials provided
  */
-$link = mysqli_connect(
-    $config['db_host'],
-    $config['db_user'],
-    $config['db_pass'],
-    $config['db_name']
-);
+try {
+    $link = mysqli_connect(
+        $config['db_host'],
+        $config['db_user'],
+        $config['db_pass'],
+        $config['db_name']
+    );
+} catch (mysqli_sql_exception $e) {
+    mysqli_rollback($link);
+    echo "MYSQL Exception Raised : " . $e->getMessage();
+} catch (Exception $e) {
+    mysqli_rollback($link);
+    echo "General Exception Raised : " . $e->getMessage();
+}
 
 
 

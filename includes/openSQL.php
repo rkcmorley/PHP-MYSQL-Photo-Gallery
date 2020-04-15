@@ -4,6 +4,7 @@
  *
  * If it's successful then it will select the tables and render the data.
  */
+
 if (mysqli_connect_errno()) {
     exit(mysqli_connect_error());
 } else {

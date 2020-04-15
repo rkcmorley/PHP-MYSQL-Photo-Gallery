@@ -19,6 +19,7 @@ $result = mysqli_query($link, $sql);
 /*
  * If it fails, it will show an error message.
  */
+
 if ($result === false) {
     echo mysqli_error($link);
 }

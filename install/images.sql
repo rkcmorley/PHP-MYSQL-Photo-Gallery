@@ -3,7 +3,7 @@ CREATE TABLE
             id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
             title VARCHAR(255),
             description VARCHAR(255),
-            file_name VARCHAR(255) NOT NULL UNIQUE,
+            file_name VARCHAR(255) NOT NULL,
             width INT(255),
             height INT(255)
             );

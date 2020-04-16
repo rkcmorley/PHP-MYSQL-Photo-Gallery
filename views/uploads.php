@@ -25,7 +25,7 @@ try {
                 throw new Exception("The title is blank! Please fill it in.");
             } else if (!isset($description) OR trim($description) == '') {
                 throw new Exception("The description is blank! Please write something descriptive.");
-            } else if ($width == 0 OR $height <= 0) {
+            } else if ($width == 0 OR $height == 0) {
                 throw new Exception("Unrecognised image format. It appears to be corrupted. Please format it properly then upload it in .jpg.");
             } else if ($width <= 600 OR $height <= 600) {
                 throw new Exception('Image size is too small. It must be greater than 600 pixels in width and height.');

@@ -17,14 +17,14 @@ if (isset($_GET['image'])) {
         width as width
         from
         images
-        where id ='" . $getLargeImageId  . "'";
+        where id ='" . $getLargeImageId . "'";
 } else {
     echo "Invalid parameter.";
 }
 
 if (isset($sql)) {
     // Execute the query, assigning the result to $result
-    $result = mysqli_query($link,$sql);
+    $result = mysqli_query($link, $sql);
     // If the query failed, $result will be "false", so we test for this, and exit if it is
     if ($result === false) {
         exit("Error retrieving records from database.");
@@ -39,12 +39,12 @@ if (isset($sql)) {
             array_push($structure, json_encode($row));
         }
         // Check for errors
-        if(json_last_error() == JSON_ERROR_NONE){
+        if (json_last_error() == JSON_ERROR_NONE) {
             // No errors occurred, so echo json objects
             foreach ($structure as $json) {
                 echo $json;
             }
-        } else{
+        } else {
             // Errors encountered
             echo 'Something is wrong with JSON...';
             echo 'CODE: ' . json_last_error();

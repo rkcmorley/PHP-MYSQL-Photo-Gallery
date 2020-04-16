@@ -2,8 +2,10 @@
 
 $config['app_dir'] = dirname(dirname(__FILE__));
 
-$config['upload_dir'] = $config['app_dir'] . '/uploads/';
+$config['images_dir'] = $config['app_dir'] . '/images/';
 
-$config['thumbnails_dir'] = $config['app_dir'] . '/thumbnails/';
+$config['upload_dir'] = $config['images_dir'] . 'uploads/';
 
-?>
+$config['thumbnails_dir'] = $config['images_dir'] . 'thumbnails/';
+
+

@@ -28,7 +28,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     list($img, $error, $width, $height) = img_resize($config['upload_dir'] . htmlentities($row['file']), $config['thumbnails_dir'] . "small_" . htmlentities($row['file']), 150, 150, 80);
     if ($img) {
         echo "<h2>" . htmlentities($row['title']) . "</h2>";
-        echo "<a href='index.php?page=largeimage&image=" . htmlentities($row['id']) ."'><img src='thumbnails/" . "small_" . htmlentities($row['file']) . "' width='" . $width . "' height='" . $height . "' alt='" . htmlentities($row['title'])  . "'/>" . "</a>";
+        echo "<a href='index.php?page=largeimage&image=" . htmlentities($row['id']) ."'><img src='images/thumbnails/" . "small_" . htmlentities($row['file']) . "' width='" . $width . "' height='" . $height . "' alt='" . htmlentities($row['title'])  . "'/>" . "</a>";
     } else {
         echo $error;
     }

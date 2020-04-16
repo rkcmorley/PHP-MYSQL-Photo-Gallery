@@ -31,6 +31,13 @@ li {
 a {
     color: #001f3f;
     text-decoration: none;
+}
+
+a.largeImage {
+    cursor: default;
+}
+
+img {
     cursor: pointer;
 }
 

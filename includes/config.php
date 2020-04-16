@@ -22,9 +22,6 @@ try {
 } catch (mysqli_sql_exception $e) {
     mysqli_rollback($link);
     echo "MYSQL Exception Raised : " . $e->getMessage();
-} catch (Exception $e) {
-    mysqli_rollback($link);
-    echo "General Exception Raised : " . $e->getMessage();
 }
 
 

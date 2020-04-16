@@ -15,7 +15,6 @@
 include dirname(dirname(__FILE__)) . '/includes/directories.php';
 function img_resize($in_img_file, $out_img_file, $req_width, $req_height, $quality)
 {
-
     // Get image file details
     $size = getimagesize($in_img_file);
     $width = $size[0];

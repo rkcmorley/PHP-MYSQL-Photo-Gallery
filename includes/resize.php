@@ -1,4 +1,8 @@
 <?php
+
+// This opens up the directories where the image files will go into.
+include dirname(dirname(__FILE__)) . '/includes/directories.php';
+
 /**
  * Resize images
  *
@@ -9,11 +13,9 @@
  * @param int $req_width Width of area the image should fill
  * @param int $req_height Height of area the image should fill
  * @param int $quality Quality of the thumb
- * @return bool, string $error[, int $new_width, int $new_height]
+ * @return array [bool, string $error, int $new_width, int $new_height]
  */
-
-include dirname(dirname(__FILE__)) . '/includes/directories.php';
-function img_resize($in_img_file, $out_img_file, $req_width, $req_height, $quality)
+function image_resize($in_img_file, $out_img_file, $req_width, $req_height, $quality)
 {
     // Get image file details
     $size = getimagesize($in_img_file);

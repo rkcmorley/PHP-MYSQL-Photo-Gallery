@@ -1,4 +1,6 @@
 <?php
+//These are the French translation.
+
 $lang['lang-eng'] = 'Anglais';
 $lang['lang-fre'] = 'Franz�sisch';
 
@@ -15,3 +17,6 @@ $lang['image_title'] = 'Titre de l\'image';
 $lang['image_description'] = 'Description de l\'image';
 $lang['upload_jpeg'] = 'Téléchargez une image jpeg';
 $lang['button'] = 'Soumettre';
+
+$lang['error_title'] = 'Erreur';
+$lang['error_heading'] = 'Désolé, la page est introuvable!';

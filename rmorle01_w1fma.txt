@@ -1,0 +1,133 @@
+Web Address folder:
+https://titan.dcs.bbk.ac.uk/~rmorle01/w1fma/index.php
+
+Web Services folder:
+https://titan.dcs.bbk.ac.uk/~rmorle01/w1fma/includes/data.php
+
+How to deploy the application:
+
+To deploy the application, the database must be accessible, the SQL script is stored in the install folder.
+
+Once the database is up and running, the index.php file should be able to run the web pages through the views folder.
+
+The index.php contains the links to each page. The visible links are the home page and the uploads page. The others are the large image page and the error page.
+
+Each web page in the views folder has its content. The home.php contains the thumbnails of the images. Each image is linked to a larger version of the image.
+
+The images folder and the subfolders within it must have 777 permission, otherwise, you’ll not be able to upload or save the image files.
+
+The thumbnail images are created by getting the original images from the upload folder and resize them and put them into the thumbnails folder which will have the name “small” added to it. The ID, title and description are obtained from the database.
+
+The uploads.php contains the upload form. This is where the user uploads the image files. The user must fill in the title, description and choose an image file. If none of the inputs has been filled in, it will result in an error. It is required to fill them in.
+
+The uploads.php can only accept a file that has “.jpg” in its extension. It can detect if the “.jpg” file is authentic or not. The uploads.php also lowercase all the characters as some users will upload file name and extensions in uppercase and the application is case-sensitive to that.
+
+The uploads.php also detects the size of the image. Any errors that occur will not go through the database and it will undo actions in the database to avoid corrupting the data.
+
+The largeimage.php contains the large version of the thumbnail image. This works by matching the ID of the thumbnail and the large version of the image. The image is created by loading the image file from the uploads folder and resize it to 600 pixels in width or height.
+
+The image file meta-data is created by obtaining the data from the curl.php which decodes the JSON data from the data.php. The data.php obtains the title, description, width and height from the database, where it will be encoded as a JSON data.
+
+The 404.php is the error page. This will show up if the user tries to find a page that does not exist in the application.
+
+
+Here are the files and folders of the application:
+
+index.php
+- this file contains all the core structure of the pages which also contains the links to each of them
+
+
+Images folder:
+This contains the necessary folders for:
+
+flags
+- this image folder contains the flags, UK and France.
+
+thumbnails
+- this image folder contains the thumbnail version of the images, they’re derived from the original images via uploads folder.
+
+uploads
+- this contains the original images, they still retain their original image sizes.
+
+
+Includes folder:
+This folder contains the essential files for the application, without them, it will not function properly.
+
+closeSQL.php
+- this contains the file to close the database.
+
+config.php
+- this creates the configuration to access the database.
+
+curl.php
+- this file access the JSON data from the data.php, it will decode the JSON data into a PHP array depending on the image ID.
+
+data.php
+- this is the file that accesses the query from the database depending on the image ID, it will then encode it into a JSON data once it has found it.
+
+directories.php
+- this contains all the paths to guide the image files to the right folders.
+
+form.php
+- this contains the upload form which will render into an HTML format.
+
+
+
+languages.php
+- this file helps the placeholder in selecting the correct words to translate it will refer to the en.php or the fr.php for translating.
+
+openSQL.php
+- this file opens the database securely.
+
+resize.php
+- this file contains a function that resizes the image appropriately.
+
+
+
+
+
+
+Install folder
+
+w1fma_tables.sql
+- this is the SQL script which runs the tables of images which contains the ID, title, description, width and height.
+
+
+Lang folder
+
+en.php
+- this contains the English translation of the placeholders that the language.php refers to.
+
+fr.php
+- this contains the French translation of the placeholders that the language.php refers to.
+
+Templates folder:
+This folder contains the CSS and HTML files. These files are responsible for the appearance and structure of the application.
+
+header.html
+- this creates the opening tags of the HTML file which contains the placeholders and the flags for translation.
+
+footer.html
+- this creates the closing tags of the HTML file.
+
+CSS folder:
+This folder contains the CSS file:
+
+styles.css
+- this creates the appearance of the application.
+
+
+Views folder:
+This folder contains the web pages that are shown on the applications.
+
+404.php
+- this creates the error page if no pages exist on the application.
+
+home.php
+- this is the page that contains the thumbnail of the images and the language selection menu.
+
+largeimage.php
+- this contains the large version of the thumbnail images, it works by matching the ID of both images.
+
+uploads.php
+- this file contains instruction where it will check on whether the file uploaded is valid or not and if it’s valid, it will guide the file to the correct image folder and it will extract the data and insert it into the database.

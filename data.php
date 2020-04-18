@@ -10,7 +10,7 @@ header('Content-type: application/json');
 $getLargeImageId = isset($_GET['image']) ? (int)$_GET['image'] : 0;
 
 // Generate sql based on query string params
-if ($_GET['image']) {
+if (isset($_GET['image'])) {
     // Construct the query based on the ID number of the selected image.
     $sql = "select 
         file_name as file,

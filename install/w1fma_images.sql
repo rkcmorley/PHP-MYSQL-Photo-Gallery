@@ -1,3 +1,4 @@
+-- This creates the table for the images
 CREATE TABLE
             images(
             id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -7,12 +8,11 @@ CREATE TABLE
             width INT(255),
             height INT(255)
             );
-ROLLBACK;                
-
-describe images;
-
+                
+-- This views the entire table, images
 select * from images;
 
+-- This removes the table, images
 drop table images;
 
 

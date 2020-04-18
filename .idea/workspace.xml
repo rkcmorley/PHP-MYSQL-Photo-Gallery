@@ -3,40 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="34cf9dbb-35a4-49fa-bb04-e977f4a933f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thumbnails/small_2880px-indian_rhinoceros_(rhinoceros_unicornis)_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thumbnails/small_72477621_10158273991998538_8909448303049965568_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thumbnails/small_img_2719.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/uploads/2880px-indian_rhinoceros_(rhinoceros_unicornis)_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/uploads/72477621_10158273991998538_8909448303049965568_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/uploads/img_2719.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/landscape-large.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/landscape-medium.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/landscape-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/portrait-large.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/portrait-medium.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/portrait-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/square-large.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/square-medium.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/w1fma_test-images/square-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/closeSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/closeSQL.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/curl.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/curl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/directories.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/directories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/languages.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/languages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/openSQL.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/openSQL.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/resize.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/resize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/images.sql" beforeDir="false" afterPath="$PROJECT_DIR$/install/w1fma_images.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/en.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/fr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/w1fma_images.sql" beforeDir="false" afterPath="$PROJECT_DIR$/install/w1fma_images.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/largeimage.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/largeimage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/uploads.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/uploads.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +104,7 @@
       <workItem from="1587045657051" duration="17090000" />
       <workItem from="1587125722275" duration="2739000" />
       <workItem from="1587144752131" duration="2572000" />
-      <workItem from="1587231436781" duration="5656000" />
+      <workItem from="1587231436781" duration="6089000" />
     </task>
     <servers />
   </component>

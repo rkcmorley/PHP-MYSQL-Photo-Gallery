@@ -16,7 +16,7 @@ curl_setopt_array($my_curl, array(
     // This will return the response as a string.
     CURLOPT_RETURNTRANSFER => 1,
     // It will also find the URL that contains the data.
-    CURLOPT_URL => 'https://titan.dcs.bbk.ac.uk/~rmorle01/w1fma/includes/data.php?image=' . $getLargeImageId
+    CURLOPT_URL => 'http://localhost:8888/FMA/includes/data.php?image=' . $getLargeImageId
 ));
 
 // Send the request & save response to $resp

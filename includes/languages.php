@@ -1,7 +1,7 @@
 <?php
 // This will set the page on the query parameter, by default, it will select uploads.
 if (!isset($_GET['page'])) {
-    $page = 'uploads';
+    $page = 'home';
 } else {
     //Otherwise, it will get the appropriate page.
     $page = $_GET['page'];
@@ -9,13 +9,13 @@ if (!isset($_GET['page'])) {
 
 // This will switch title and header translation depending on the page.
 switch ($page) {
-    case 'uploads':
-        $page_title = $lang['upload_title'];
-        $page_heading = $lang['upload_heading'];
-        break;
     case 'home':
         $page_title = $lang['home_title'];
         $page_heading = $lang['home_heading'];
+        break;
+    case 'uploads':
+        $page_title = $lang['upload_title'];
+        $page_heading = $lang['upload_heading'];
         break;
     case 'largeimage':
         $page_title = $lang['home_title'];

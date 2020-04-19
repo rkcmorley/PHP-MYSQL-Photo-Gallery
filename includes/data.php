@@ -10,20 +10,17 @@ header('Content-type: application/json');
 $getLargeImageId = isset($_GET['image']) ? (int)$_GET['image'] : 0;
 
 // Generate sql based on query string params
-if ($_GET['image']) {
+if (isset($_GET['image'])) {
     // Construct the query based on the ID number of the selected image.
     $sql = "select 
-        file_name as file,
         title as title,
         description as description,
-        height as height,
-        width as width
+        file_name as file,
+        width as width,
+        height as height
         from
         images
         where id ='" . $getLargeImageId . "'";
-} else {
-    //If it fails to find one, it will generate an error.
-    echo "Invalid parameter.";
 }
 
 //If the query has been set, it will do the following.
